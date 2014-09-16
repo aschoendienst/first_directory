@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<style >
+
+body {
+	background-color: #FFFFFF;
+	margin-left: 20%;
+	margin-top: 0px;
+	margin-right: 20%;
+	margin-bottom: 0px;
+}   
+
+#clickable_div {width:60px; height:70px; background-color:none;}
+*{margin:0; padding:0}
+#nav_menu{width:60px; height:auto; background-color:#FFFFFF;display:none;border-style:solid;
+border-width:1px;
+border-color:#0072bc;
+    
+}
+
+#wrap{ width:100px }
+
+    #drpdown {
+        border-radius: 10px;
+        margin:auto;
+        background-color: #ffffff;
+        width: 100px;
+        height: 250px;
+        border: 0px solid #000;
+        z-index: 9002;
+        
+        -webkit-box-shadow: 0px 0px 10px #000;
+        -moz-box-shadow: 0px 0px 10px #000;
+        box-shadow: 0px 0px 10px #000;
+        filter: progid:DXImageTransform.Microsoft.Shadow(color=#aaaaaa,direction=135,strength=10); 
+
+    }
+    #container {
+        background-color: none;
+        width: 90x;
+        height: 40px;
+        border: 0px solid #000000;
+        margin: left;
+        padding: 5px;
+       
+    }
+    #container   a {
+	padding: 5px 6px 5px;
+	display: block;
+    } 
+     #container  a:hover {
+	background: #E6F0FF;
+}      
+    }
+.container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  border: 0px solid #000000; 
+}    
+     
+  
+</style>
+ <html>
+<head>
+   
+      
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+
+function myFunction()
+{
+$(drpdown).hide();
+}
+    
+        $(document).ready(function () {
+        $(clickable_div).mouseover(function () {
+            $(drpdown).slideDown();
+
+       
+
+
+        });
+         
+    });
+$(document).ready(function () {
+$(clickable_div).mouseleave( function(){
+    $(drpdown).hide();
+});
+});
+$(document).ready(function () {
+        $(container).effect("highlight", {}, 3000);  
+        
+ });                 
+</script>
+
+</head> 
+
+
+
+
+
+<body onload="myFunction()">
+<div class="container1">
+ 
+    <div id="clickable_div"><img src="sharebtn.png" alt="Share" width="58" height="34">
+        <div id="drpdown">
+            
+            
+            <div id="container">
+            <ul><a href="http://www.google.com"> <img border="0" src="fblogo.png" alt="fb" width="80" height="25"></a>
+            
+            </div>
+            <div id="container">
+            <ul><a href="http://www.google.com"> <img border="0" src="twitterbtn.png" alt="fb" width="80" height="25"></a>
+            
+            </div>
+            <div id="container">
+            <ul><a href="http://www.google.com"> <img border="0" src="linkedinbtn.png" alt="fb" width="80" height="25"></a>
+            
+            </div>
+            <div id="container">
+            <ul><a href="http://www.google.com"> <img border="0" src="googleplus.png" alt="fb" width="80" height="25"></a>
+            
+            </div>
+            <div id="container">
+            <ul><a href="http://www.google.com"> <img border="0" src="morebtn.png" alt="fb" width="70" height="22"></a>
+            
+            </div>
+
+
+       
+    
+</div>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
